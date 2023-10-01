@@ -49,49 +49,74 @@ p, h1, h2, h3, h4, h5, h6 {
   display: inline;
 }
 
-ul li:first-child {
-  padding-right: 200px;
+.App-header ul li:first-child {
+  margin-right: 20%;
+  transition: all 1s ease-in-out;
+}
+
+@media(max-width: 768px) {
+  ul li {
+    opacity: 0.0;
+  }
+  #title {
+    opacity: 1.0
+  }
+
+  .App-header ul li:first-child {
+    margin-right: 0%;
+  }
 }
 
 
 /* Home */
 .Home {
-  max-width: 100vw;
-  height: 85vh;
   padding-top: 150px;
-  padding-left: min(100px, 5%);
   text-align: left;
+  padding-left: 7%;
 }
 .dots {
-  min-width: 500px;
+  min-width: 450px;
+  padding-left: 0%;
 }
 .dot {
   background-color: white;
   border-radius: 50%;
   display: inline-block;
 }
+
 .dot:first-child {
-  height: 236px;
-  width: 20%;
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   z-index: 1;
   opacity: 0.92;
   margin-bottom: 40px;
+  animation: MoveUpDown 5s linear infinite;
 }
+
 .dot:nth-child(2) {
-  height: 310px;
-  width: 310px;
+  height: 300px;
+  width: 300px;
   z-index: 2;
   margin-left: -120px;
+  animation: MoveUpDown 7s linear infinite;
 }
 .dot:nth-child(3) {
-  height: 250px;
-  width: 260px;
+  height: 240px;
+  width: 245px;
   opacity: 0.98;
   z-index: 1;
   margin-left: -150px;
   margin-bottom: -20px;
+  animation: MoveUpDown 6s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .home-intro {
@@ -101,4 +126,3 @@ ul li:first-child {
   margin-left: 50px;
   color: black;
 }
-
