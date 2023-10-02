@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header setPage={setPage}/>
+      <Header setPage={setPage} page={page}/>
       <div>
         {pages[page]}
       </div>
