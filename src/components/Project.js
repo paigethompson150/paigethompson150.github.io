@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+export default function Project(props) {
 
-export default function Project() {
-
-  return <div className="Project">
-      <h2>Project</h2>
+  return <div id="Project" className={props.className}>
+      <button></button>
   </div>
 }
