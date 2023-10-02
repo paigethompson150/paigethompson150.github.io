@@ -10,14 +10,14 @@ export default function Experiences() {
   ]
   const [selectedExperienceIndex, setSelectedExperienceIndex] = useState(0);
 
-  return <div className="Experiences">
-      <h1>EXPERIENCE</h1>
+  return <div id="experience-section" className="Experiences">
+      <h1 className="title">EXPERIENCE</h1>
       <div className="experience-container">
         <div className="experience-titles">
-          <ExperienceButton className={selectedExperienceIndex === 0 ? "bg-white" : "bg-black"} onClick={() => setSelectedExperienceIndex(0)} title={experiences[0].company}/>
-          <ExperienceButton className={selectedExperienceIndex === 1 ? "bg-white" : "bg-black"} onClick={() => setSelectedExperienceIndex(1)} title={experiences[1].company}/>
-          <ExperienceButton className={selectedExperienceIndex === 2 ? "bg-white" : "bg-black"} onClick={() => setSelectedExperienceIndex(2)} title={experiences[2].company}/>
-          <ExperienceButton className={selectedExperienceIndex === 3 ? "bg-white" : "bg-black"} onClick={() => setSelectedExperienceIndex(3)} title={experiences[3].company}/>
+          <ExperienceButton className={selectedExperienceIndex === 0 ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(0)} title={experiences[0].company}/>
+          <ExperienceButton className={selectedExperienceIndex === 1 ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(1)} title={experiences[1].company}/>
+          <ExperienceButton className={selectedExperienceIndex === 2 ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(2)} title={experiences[2].company}/>
+          <ExperienceButton className={selectedExperienceIndex === 3 ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(3)} title={experiences[3].company}/>
         </div>
         <div className="experience-description">
           <p className="date">{experiences[selectedExperienceIndex].date}</p>
