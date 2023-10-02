@@ -2,11 +2,12 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 import React, { useState } from 'react';
 
 function App() {
   const [page, setPage] = useState(0);
-  const pages = [<Home/>, <About/>]
+  const pages = [<Home/>, <About/>, <Portfolio/>]
 
   return (
     <div className="App">
