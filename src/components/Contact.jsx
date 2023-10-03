@@ -1,45 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
 
-class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      email: '',
-      message: ''
+const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
+    init('DEchiZdcaDwjL5lIo');
+
+    const submit = () => {
+      if (name && email && message) {
+          const serviceId = 'service_60baqok';
+          const templateId = 'template_tx8b6pp';
+          const templateParams = {
+            name,
+            email,
+            message
+          }
+
+          emailjs.send(serviceId, templateId, templateParams).then(response => console.log(response))
+          .then(error => console.log(error));
+          
+          setName('');
+          setEmail('');
+          setMessage('');
+          setEmailSent(true);
+      } else {
+          alert('Please fill in all fields.');
+      }
     }
-  }
-  render() {
-    return(
-      <div className="App">
-        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
-            <input type="email" className="form-control"  value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+
+    const isValidEmail = email => {
+      const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return regex.test(String(email).toLowerCase());
+    };
+
+    return (
+        <div id="contact-form">
+            <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
+        <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
+        <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+        <button onClick={submit}>Send Message</button>
+        <span className={emailSent ? 'visible' : 'hidden'}>Thank you for your message, we will be in touch in no time!</span>
+        </div>
     );
-  }
-  onNameChange(event) {
-    this.setState({name: event.target.value})
-  }
-  onEmailChange(event) {
-    this.setState({email: event.target.value})
-  }
-  onMessageChange(event) {
-    this.setState({message: event.target.value})
-  }
-  handleSubmit(event) {
-  }
-}
+};
+
 export default Contact;
