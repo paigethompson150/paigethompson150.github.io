@@ -24,6 +24,8 @@ export default function Portfolio() {
     {id: 7, name:"California", image:cali, desc: "Designed a reactive native app"},
   ]
   const [selectedTravel, setSelectedTravel] = useState(-1);
+  const travelList = travels.map((travel, index) => <Project obj={travel} onClick={() => setSelectedTravel(travel)}/>);
+  
   const newRef = useRef(null);
   useEffect(() => {
     document.addEventListener("mousedown", handleOutsideClick);
@@ -37,19 +39,11 @@ export default function Portfolio() {
     }
   };
 
-
   return <div className="Portfolio">
       <h1 className="title">TRAVELS</h1>
 
       <div className="travels-container" ref={newRef}>
-        <Project obj={travels[0]} onClick={() => setSelectedTravel(travels[0])}/>
-        <Project obj={travels[1]} onClick={() => setSelectedTravel(travels[1])}/>
-        <Project obj={travels[2]} onClick={() => setSelectedTravel(travels[2])}/>
-        <Project obj={travels[3]} onClick={() => setSelectedTravel(travels[3])}/>
-        <Project obj={travels[4]} onClick={() => setSelectedTravel(travels[4])}/>
-        <Project obj={travels[5]} onClick={() => setSelectedTravel(travels[5])}/>
-        <Project obj={travels[6]} onClick={() => setSelectedTravel(travels[6])}/>
-        <Project obj={travels[7]} onClick={() => setSelectedTravel(travels[7])}/>
+        {travelList}
       </div>
 
       <div className={selectedTravel !== -1 ? "project-expanded" : "project-hidden"}>

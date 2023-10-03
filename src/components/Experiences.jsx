@@ -10,15 +10,13 @@ export default function Experiences() {
     {id: 3, company:"Girls Who Code", date:"Jun. 2023 - Aug. 2023", role:"Here is my long description right hurr"}
   ]
   const [selectedExperienceIndex, setSelectedExperienceIndex] = useState(0);
+  const experienceButtons = experiences.map(({id, company}) => <ExperienceButton className={selectedExperienceIndex === id ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(id)} company={company}/>)
 
   return <div id="experience-section">
       <h1 className="title">EXPERIENCE</h1>
       <div className="experience-container">
         <div className="experience-titles">
-          <ExperienceButton className={selectedExperienceIndex === 0 ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(0)} title={experiences[0].company}/>
-          <ExperienceButton className={selectedExperienceIndex === 1 ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(1)} title={experiences[1].company}/>
-          <ExperienceButton className={selectedExperienceIndex === 2 ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(2)} title={experiences[2].company}/>
-          <ExperienceButton className={selectedExperienceIndex === 3 ? "unselected" : "selected"} onClick={() => setSelectedExperienceIndex(3)} title={experiences[3].company}/>
+          {experienceButtons}
         </div>
         <div className="experience-description">
           <p className="date">{experiences[selectedExperienceIndex].date}</p>

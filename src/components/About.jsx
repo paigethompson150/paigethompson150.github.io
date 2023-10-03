@@ -1,3 +1,4 @@
+import 'animate.css';
 import Experiences from "./Experiences"
 import chevron from '../images/down.png';
 import avatar from '../images/avatar.png';

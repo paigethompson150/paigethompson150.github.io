@@ -14,6 +14,8 @@ export default function Portfolio() {
   ]
   const [selectedProjectType, setSelectedProjectType] = useState("All");
   const [selectedProject, setSelectedProject] = useState(-1);
+  const projectsList = projects.map((project, index) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hidden"} obj={project} onClick={() => setSelectedProject(project)}/>);
+
   const newRef = useRef(null);
   useEffect(() => {
     document.addEventListener("mousedown", handleOutsideClick);
@@ -38,12 +40,10 @@ export default function Portfolio() {
       </ul>
 
       <div className="projects-container" ref={newRef}>
-        <Project className={selectedProjectType === projects[0].type || selectedProjectType === "All" ? "shown" : "hidden"} obj={projects[0]} onClick={() => setSelectedProject(projects[0])}/>
-        <Project className={selectedProjectType === projects[1].type || selectedProjectType === "All" ? "shown" : "hidden"} obj={projects[1]} onClick={() => setSelectedProject(projects[1])}/>
-        <Project className={selectedProjectType === projects[2].type || selectedProjectType === "All" ? "shown" : "hidden"} obj={projects[2]} onClick={() => setSelectedProject(projects[3])}/>
-        <Project className={selectedProjectType === projects[3].type || selectedProjectType === "All" ? "shown" : "hidden"} obj={projects[3]} onClick={() => setSelectedProject(projects[4])}/>
+        {projectsList}
       </div>
 
+      {/* Project Popup */}
       <div className={selectedProject !== -1 ? "project-expanded" : "project-hidden"}>
         <h1>Title</h1>
         <h3>Title Again</h3>
