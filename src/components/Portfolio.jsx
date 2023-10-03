@@ -11,19 +11,22 @@ import dashboard from '../images/dashboard.png';
 import signUp from '../images/SignUp.png'
 
 export default function Portfolio() {
-  let projects = [
-    {id: 0, type: "Web", name:"Pagu Ramen", image:ramen, desc: "Restaurant landing page"},
-    {id: 1, type: "Web", name:"Curse of Strahd", image:cos, desc: "Book Tracking Site"},
-    {id: 2, type: "iOS", name:"GameNight", image:gamenight, desc: "Created an iOS app"},
-    {id: 3, type: "Web", name:"Portfolio", image:portfolio, desc: "Designed a reactive native app"},
-    {id: 4, type: "iOS", name:"Tweeter", image:tweet, desc: "Designed a reactive native app"},
-    {id: 5, type: "Design", name:"Admin Dashboard", image:dashboard, desc: "Designed a reactive native app"},
-    {id: 6, type: "Design", name:"Sign Up Form", image:signUp, desc: "Designed a reactive native app"},
-    {id: 7, type: "Web", name:"Tic-Tac-Toe", image:ticTacToe, desc: "Designed a reactive native app"},
+  let leftProjects = [
+    {key: 0, type: "Web", name:"Pagu Ramen", image:ramen, desc: "Restaurant landing page"},
+    {key: 1, type: "Web", name:"Curse of Strahd", image:cos, desc: "Book Tracking Site"},
+    {key: 2, type: "iOS", name:"GameNight", image:gamenight, desc: "Created an iOS app"},
+    {key: 3, type: "Web", name:"Portfolio", image:portfolio, desc: "Designed a reactive native app"},
+    {key: 7, type: "Web", name:"Tic-Tac-Toe", image:ticTacToe, desc: "Designed a reactive native app"}
+  ]
+  let rightProjects = [
+    {key: 4, type: "iOS", name:"Tweeter", image:tweet, desc: "Designed a reactive native app"},
+    {key: 5, type: "Design", name:"Admin Dashboard", image:dashboard, desc: "Designed a reactive native app"},
+    {key: 6, type: "Design", name:"Sign Up Form", image:signUp, desc: "Designed a reactive native app"}
   ]
   const [selectedProjectType, setSelectedProjectType] = useState("All");
   const [selectedProject, setSelectedProject] = useState(-1);
-  const projectsList = projects.map((project, index) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hidden"} obj={project} onClick={() => setSelectedProject(project)}/>);
+  const leftProjectsList = leftProjects.map((project, index) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hkeyden"} obj={project} onClick={() => setSelectedProject(project)}/>);
+  const rightProjectsList = rightProjects.map((project, index) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hkeyden"} obj={project} onClick={() => setSelectedProject(project)}/>);
 
   const newRef = useRef(null);
   useEffect(() => {
@@ -49,7 +52,12 @@ export default function Portfolio() {
       </ul>
 
       <div className="projects-container" ref={newRef}>
-        {projectsList}
+        <div className="projects-left">
+          {leftProjectsList}
+        </div>
+        <div className="projects-right">
+          {rightProjectsList}
+        </div>
       </div>
 
       {/* Project Popup */}
