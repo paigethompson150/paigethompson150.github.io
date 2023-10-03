@@ -3,14 +3,23 @@ import React, { useState, useRef, useEffect } from 'react';
 import Project from './Project';
 import gamenight from '../images/gamenight.png';
 import cos from '../images/cos.png';
-import pagu from '../images/pagu.png';
+import ramen from '../images/ramen.png';
+import portfolio from '../images/portfolio.png';
+import tweet from '../images/tweet.png';
+import ticTacToe from '../images/tictactoe.gif';
+import dashboard from '../images/dashboard.png';
+import signUp from '../images/SignUp.png'
 
 export default function Portfolio() {
   let projects = [
-    {id: 0, type: "Web", name:"Pagu Ramen", image:pagu, desc: "Restaurant landing page"},
+    {id: 0, type: "Web", name:"Pagu Ramen", image:ramen, desc: "Restaurant landing page"},
     {id: 1, type: "Web", name:"Curse of Strahd", image:cos, desc: "Book Tracking Site"},
     {id: 2, type: "iOS", name:"GameNight", image:gamenight, desc: "Created an iOS app"},
-    {id: 3, type: "Design", name:"CheetaHub", image:gamenight, desc: "Designed a reactive native app"}
+    {id: 3, type: "Web", name:"Portfolio", image:portfolio, desc: "Designed a reactive native app"},
+    {id: 4, type: "iOS", name:"Tweeter", image:tweet, desc: "Designed a reactive native app"},
+    {id: 5, type: "Design", name:"Admin Dashboard", image:dashboard, desc: "Designed a reactive native app"},
+    {id: 6, type: "Design", name:"Sign Up Form", image:signUp, desc: "Designed a reactive native app"},
+    {id: 7, type: "Web", name:"Tic-Tac-Toe", image:ticTacToe, desc: "Designed a reactive native app"},
   ]
   const [selectedProjectType, setSelectedProjectType] = useState("All");
   const [selectedProject, setSelectedProject] = useState(-1);
@@ -44,9 +53,14 @@ export default function Portfolio() {
       </div>
 
       {/* Project Popup */}
-      <div className={selectedProject !== -1 ? "project-expanded" : "project-hidden"}>
-        <h1>Title</h1>
-        <h3>Title Again</h3>
+      <div className={selectedProject !== -1 ? "project-expanded" : "project-hidden"} ref={newRef}>
+        <div className="project-img-container">
+          <img src={selectedProject.image} alt="project"/>
+        </div>
+        <div className="project-description">
+          <h1>{selectedProject.name}</h1>
+          <h2>{selectedProject.desc}</h2>
+        </div>
       </div>
   </div>
 }
