@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 
 function App() {
   const [page, setPage] = useState(0);
-  const pages = [<Home/>, <About/>, <Portfolio/>]
+  const pages = [<Home onClick={() => setPage(1)}/>, <About/>, <Portfolio/>]
 
   return (
     <div className="App">
