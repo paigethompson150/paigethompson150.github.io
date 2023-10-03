@@ -1,6 +1,9 @@
 export default function Project(props) {
-
-  return <div id="Project" className={props.className}>
-      <button></button>
+  const {id, type, name, image, desc} = props.obj;
+  
+  return <div id="Project" className={props.className} onClick={props.onClick}>
+      <h1>{name}</h1>
+      <img className="project-image" src={image} alt=""/>
+      <p>{desc}</p>
   </div>
 }

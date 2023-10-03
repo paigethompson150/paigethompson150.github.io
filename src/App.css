@@ -43,7 +43,8 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   font-size: calc(10px + 2vmin);
   padding-top: 5vh;
-  position: sticky; top: 0;
+  position: sticky; 
+  top: 0;
   padding-bottom: 5px;
   background-color: black;
 }
@@ -259,12 +260,12 @@ p, h1, h2, h3, h4, h5, h6 {
 #Project {
   width: 45%;
   height: 35vh;
-  background-color: pink;
   border-radius: 8px;
   margin-bottom: 40px;
   margin-right: 40px;
   background-image: linear-gradient(rgb(255, 255, 255) , rgb(216, 216, 216));
-  transition: all 1s ease-in-out;
+  color: black;
+  transition: all 0.7s ease-in-out;
 }
 @media screen and (max-width: 1143px) {
   #Project {
@@ -276,7 +277,26 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
   visibility: hidden;
 }
-.shown {
+
+.project-image {
+  margin: auto;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.project-expanded {
   display: block;
   visibility: visible;
+  z-index: 2;
+  background-color: red;
+  position: fixed;
+  left: 14vw;
+  top: 15vh;
+  bottom: 15vh;
+  width: 72vw;
+  animation: fadeIn; 
+  animation-duration: 0.5s;
+}
+.project-hidden {
+  visibility: hidden;
 }
