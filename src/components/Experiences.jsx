@@ -1,3 +1,4 @@
+import 'animate.css';
 import React, { useState } from 'react';
 import ExperienceButton from "./ExperienceButton";
 

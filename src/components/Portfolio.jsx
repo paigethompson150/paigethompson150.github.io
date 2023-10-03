@@ -1,9 +1,9 @@
+import 'animate.css';
 import React, { useState, useRef, useEffect } from 'react';
 import Project from './Project';
 import gamenight from '../images/gamenight.png';
 import cos from '../images/cos.png';
 import pagu from '../images/pagu.png';
-import 'animate.css';
 
 export default function Portfolio() {
   let projects = [
@@ -23,9 +23,7 @@ export default function Portfolio() {
   });
   const handleOutsideClick = (e) => {
     if (newRef.current && !newRef.current.contains(e.target)) {
-      console.log(selectedProject);
       setSelectedProject(-1);
-      console.log(selectedProject);
     }
   };
 
