@@ -10,7 +10,7 @@ export default function Experiences() {
   ]
   const [selectedExperienceIndex, setSelectedExperienceIndex] = useState(0);
 
-  return <div id="experience-section" className="Experiences">
+  return <div id="experience-section">
       <h1 className="title">EXPERIENCE</h1>
       <div className="experience-container">
         <div className="experience-titles">

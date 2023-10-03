@@ -5,7 +5,10 @@ import avatar from '../images/avatar.png';
 export default function About() {
   return <div className="About">
       <div className="about-intro">
-        <img id="avatar"src={avatar} alt="avatar with brown hair"/>
+        <div className="about-title">
+          <h1 className="title">ABOUT</h1> 
+          <img id="avatar"src={avatar} alt="avatar with brown hair"/>
+        </div>
         <h2>Welcome to my web-paige 👋</h2>
         <br/>
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

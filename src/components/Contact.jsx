@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
+import linkedin from '../images/linkedin.webp';
+import github from '../images/github.png';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -10,7 +12,7 @@ const Contact = () => {
     init('DEchiZdcaDwjL5lIo');
 
     const submit = () => {
-      if (name && email && message) {
+      if (name && isValidEmail(email) && message) {
           const serviceId = 'service_60baqok';
           const templateId = 'template_tx8b6pp';
           const templateParams = {
@@ -27,7 +29,7 @@ const Contact = () => {
           setMessage('');
           setEmailSent(true);
       } else {
-          alert('Please fill in all fields.');
+          alert('Please fill in all fields, and double check your email is correctly formatted');
       }
     }
 
@@ -37,13 +39,26 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact-form">
-            <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
-        <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
-        <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-        <button onClick={submit}>Send Message</button>
-        <span className={emailSent ? 'visible' : 'hidden'}>Thank you for your message, we will be in touch in no time!</span>
+      <div className="Contact">
+        <div>
+          <h1 className="title">CONTACT</h1>
+          <input className="contact-input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
+          <input className="contact-input" type="email" placeholder="Email address" value={email} onChange={e => setEmail(e.target.value)} />
+          <textarea rows="8" className="contact-input" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+          <div className="Experience-Button">
+            <button className="Experience-Button" onClick={submit}>Send Message</button>
+          </div>
+          <span className={emailSent ? 'visible' : 'hidden'}>Thank you for your message! Here's some cake: 🎂</span>
         </div>
+
+        <div className="contact-links">
+            <p>paigethompson150@gmail.com</p>
+            <div className="contact-imgs">
+              <img src={linkedin} alt="linkedin" />
+              <img src={github} alt="linkedin" />
+            </div>
+          </div>
+      </div>
     );
 };
 
