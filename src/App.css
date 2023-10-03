@@ -9,6 +9,8 @@
   --blue: rgb(0,29,41);
   --header-font: 4em;
   animation: gradient 20s ease infinite;
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes gradient {
@@ -331,16 +333,16 @@ p, h1, h2, h3, h4, h5, h6 {
 .project-expanded {
   display: flex;
   visibility: visible;
-  z-index: 2;
   background-image: linear-gradient(rgb(255, 255, 255) , rgb(216, 216, 216));
   border-radius: 15;
   position: fixed;
-  left: 14vw;
-  top: 15vh;
-  bottom: 15vh;
-  width: 72vw;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: max(50vw, 500px);
   border-radius: 8px;
-  animation: fadeIn; 
+  animation: slideInRight;
   animation-duration: 0.5s;
   color: black;
 }
@@ -352,6 +354,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .project-description {
   width: 60%;
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 1; 
+  cursor: pointer; 
 }
 
 
