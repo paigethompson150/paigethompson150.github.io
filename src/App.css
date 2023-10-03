@@ -68,7 +68,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .App-header ul li:first-child {
-  margin-right: 15%;
+  margin-right: 35%;
+  margin-left: 8%;
+  width: 50px;
 }
 
 @media(max-width: 768px) {
@@ -272,6 +274,8 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
   margin-right: 40px;
   transition: all 0.7s ease-in-out;
+  animation: fadeIn;
+  animation-duration: 0.7s;
 }
 .project img {
   padding-top: 10px;

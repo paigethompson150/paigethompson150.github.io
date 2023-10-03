@@ -3,11 +3,12 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import React, { useState } from 'react';
 
 function App() {
   const [page, setPage] = useState(0);
-  const pages = [<Home onClick={() => setPage(1)}/>, <About/>, <Portfolio/>]
+  const pages = [<Home onClick={() => setPage(1)}/>, <About/>, <Portfolio/>, <Contact />]
 
   return (
     <div className="App">
