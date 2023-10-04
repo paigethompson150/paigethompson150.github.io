@@ -2,7 +2,7 @@ import 'animate.css';
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
-import linkedin from '../images/linkedin.webp';
+import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 
 const Contact = () => {
@@ -53,10 +53,14 @@ const Contact = () => {
         </div>
 
         <div className="contact-links">
-            <p>paigethompson150@gmail.com</p>
+            <h3>paigethompson150@gmail.com</h3>
             <div className="contact-imgs">
-              <img src={linkedin} alt="linkedin" />
-              <img src={github} alt="linkedin" />
+              <a target="_blank" href="https://www.linkedin.com/in/paige-thompson-3973251a1/" rel="noreferrer">
+                <img src={linkedin} alt="linkedin" />
+              </a>
+              <a target="_blank" href="https://github.com/paigethompson150" rel="noreferrer">
+                <img src={github} alt="github" />
+              </a>
             </div>
           </div>
       </div>
