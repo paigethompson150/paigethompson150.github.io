@@ -62,60 +62,41 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 /* Header */
-
 .App-header {
   display: flex;
+  justify-content: center;
+  width: 100vw;
   font-size: calc(10px + 2vmin);
   padding-top: 5vh;
+  margin-left: -10%;
   position: sticky; 
   top: 0;
   padding-bottom: 5px;
 }
 
 .App-header ul {
-  min-width: 100vw;
   display: flex;
-  justify-content: space-evenly;
-}
-
-.underlinedHeader {
-  background-color: rgba(0, 0, 0, 0.07);
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 30px;
+  gap: max(2px, 2%);
 }
 
 .App-header ul li {
+  background-color: rgba(0, 0, 0, 0.07);
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 30px;
   display: inline;
-  padding-right: 15px;
-  white-space: nowrap;
   -webkit-transition: 0.5s ease;
 }
 
-.underlinedHeader:hover {
+.App-header ul li:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.30);
   text-shadow: 0px -2px 0px rgb(255, 255, 255, 0.3);
 }
 
 .App-header ul li:first-child {
-  margin-right: 35%;
-  margin-left: 8%;
-  width: 50px;
-}
-
-@media(max-width: 768px) {
-  .App-header ul li {
-    opacity: 0.0;
-  }
-  #title {
-    opacity: 1.0
-  }
-
-  .App-header ul li:first-child {
-    margin-right: 8%;
-  }
+  min-width: 50px;
+  max-width: 50px;
 }
 
 .selected-heading {
@@ -407,6 +388,13 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0,0,0,0.5); 
   z-index: 1; 
   cursor: pointer; 
+}
+.project-expanded button {
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.project-expanded button img {
+  height: 20px;
 }
 
 

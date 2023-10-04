@@ -8,7 +8,8 @@ import portfolio from '../images/portfolio.png';
 import tweet from '../images/tweet.jpeg';
 import ticTacToe from '../images/tictactoe.gif';
 import dashboard from '../images/dashboard.png';
-import signUp from '../images/SignUp.png'
+import signUp from '../images/SignUp.png';
+import arrowBack from '../images/arrowBack.png';
 
 export default function Portfolio() {
   let leftProjects = [
@@ -64,6 +65,10 @@ export default function Portfolio() {
 
       {/* Project Popup */}
       <div className={selectedProject !== -1 ? "project-expanded" : "project-hidden"} ref={newRef}>
+        <button onClick={() => setSelectedProject(-1)}>
+          <img src={arrowBack} alt="back arrow" />
+        </button>
+
         <div className="project-wrapper">
           <h2 className="project-title">{selectedProject.name}</h2>
           <img src={selectedProject.image} alt="project"/>
