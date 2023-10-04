@@ -198,12 +198,22 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* About */
 
-.About, .Portfolio, .Home, .Contact {
+.Home, .About, .Portfolio, .Contact {
   padding-top: 20vh;
   padding-left: 15vw;
   padding-right: 15vw;
   animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1.0s; /* don't forget to set a duration! */
+}
+@media screen and (max-width: 700px) {
+  .Home, .About, .Portfolio, .Contact {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .Home {
+    padding-left: 1vw;
+    padding-right: 0vw;
+  }
 }
 
 .about-intro {
