@@ -15,6 +15,6 @@ import Project from './Project';
 export default function Travels() {
 
   return <div className="Portfolio">
-      <h1 className="title">TRAVELOGUE (coming soon)</h1>
+      <h1 className="title">TRAVELS</h1>
   </div>
 }
