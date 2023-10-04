@@ -12,21 +12,23 @@ import signUp from '../images/SignUp.png'
 
 export default function Portfolio() {
   let leftProjects = [
-    {key: 0, type: "Web", name:"Pagu Ramen", image:ramen, desc: "Restaurant landing page"},
-    {key: 2, type: "iOS", name:"GameNight", image:gamenight, desc: "Created an iOS app"},
-    {key: 7, type: "Web", name:"Tic-Tac-Toe", image:ticTacToe, desc: "Designed a reactive native app"},
-    {key: 5, type: "Design", name:"Admin Dashboard", image:dashboard, desc: "Designed a reactive native app"},
+    {key: 0, type: "Web", name:"Pagu Ramen", image:ramen, desc: "Restaurant landing page", tech: ['JavaScript', 'Webpack', 'HTML/CSS'], link: 'https://paigethompson150.github.io/webpack_practice/'},
+    {key: 2, type: "iOS", name:"GameNight", image:gamenight, desc: "Created an iOS app", tech: ['Figma', 'Swift'], link: 'https://github.com/paigethompson150/GameNight'},
+    {key: 7, type: "Web", name:"Tic-Tac-Toe", image:ticTacToe, desc: "Designed a reactive native app", tech: ['JavaScript', 'HTML/CSS'], link: 'https://paigethompson150.github.io/browser-tic-tac-toe/'},
+    {key: 5, type: "Design", name:"Admin Dashboard", image:dashboard, desc: "Designed a reactive native app", tech: ['HTML/CSS'], link: 'https://paigethompson150.github.io/admin-dashboard/'},
   ]
   let rightProjects = [
-    {key: 1, type: "Web", name:"Curse of Strahd", image:cos, desc: "Book Tracking Site"},
-    {key: 3, type: "Web", name:"Portfolio", image:portfolio, desc: "Designed a reactive native app"},
-    {key: 4, type: "iOS", name:"Tweeter", image:tweet, desc: "Designed a reactive native app"},
-    {key: 6, type: "Design", name:"Sign Up Form", image:signUp, desc: "Designed a reactive native app"}
+    {key: 1, type: "Web", name:"Curse of Strahd", image:cos, desc: "Book Tracking Site", tech: ['HTML/CSS'], link: 'https://paigethompson150.github.io/CurseOfStrahd/'},
+    {key: 3, type: "Web", name:"Portfolio", image:portfolio, desc: "Designed a reactive native app", tech: ['HTML/CSS']},
+    {key: 4, type: "iOS", name:"Tweeter", image:tweet, desc: "Designed a reactive native app", tech: ['HTML/CSS'], link: 'https://github.com/paigethompson150/tweeter'},
+    {key: 6, type: "Design", name:"Sign Up Form", image:signUp, desc: "Designed a reactive native app", tech: ['HTML/CSS'], link: 'https://paigethompson150.github.io/sign-up-form/'}
   ]
   const [selectedProjectType, setSelectedProjectType] = useState("All");
   const [selectedProject, setSelectedProject] = useState(-1);
   const leftProjectsList = leftProjects.map((project, index) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hidden"} obj={project} onClick={() => setSelectedProject(project)}/>);
   const rightProjectsList = rightProjects.map((project, index) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hidden"} obj={project} onClick={() => setSelectedProject(project)}/>);
+  
+  const tech = selectedProject.tech?.map((tech) => <span className="tech-item">{tech}</span>);
 
   const newRef = useRef(null);
   useEffect(() => {
@@ -62,12 +64,20 @@ export default function Portfolio() {
 
       {/* Project Popup */}
       <div className={selectedProject !== -1 ? "project-expanded" : "project-hidden"} ref={newRef}>
-        <div className="project-img-container">
+        <div className="project-wrapper">
+          <h2 className="project-title">{selectedProject.name}</h2>
           <img src={selectedProject.image} alt="project"/>
-        </div>
-        <div className="project-description">
-          <h1>{selectedProject.name}</h1>
-          <h2>{selectedProject.desc}</h2>
+      
+          <div className="project-description">
+            <h3>About</h3>
+            <p>{selectedProject.desc}</p>
+          </div>
+          <div className="technologies">
+            <h3>Technologies</h3>
+            {tech}
+          </div>
+          <h3>Website</h3>
+          <a target="_blank" href={selectedProject.link} rel="noreferrer">{selectedProject.link}</a>
         </div>
       </div>
       <div className={selectedProject !== -1 ? "overlay" : ""}></div>
