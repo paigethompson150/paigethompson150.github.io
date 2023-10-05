@@ -240,8 +240,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .experience-description {
   display: block;
-  min-width: 40vw;
-  max-width: 600px;
+  max-width: 500px;
 }
 .experience-description p {
   padding-bottom: 10px;
@@ -260,6 +259,9 @@ p, h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 800px){
   .experience-section {
     display: block;
+  }
+  .experience-description {
+    min-width: 40vw;
   }
 }
 .resume {

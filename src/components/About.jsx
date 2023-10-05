@@ -37,16 +37,20 @@ export default function About() {
           <h1 className="title">ABOUT</h1> 
           <img id="avatar"src={avatar} alt="avatar with brown hair"/>
         </div>
-        <h2>Welcome to my web-paige 👋</h2>
+        <h2>Welcome to my webpaige 👋</h2>
         <br/>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. </h2>
+        <h2>
+          I'm currently a senior at Simmons University studying Computer Science and 
+          minoring in Biology & Biostatistics. In 2021 I took my first ever programming class in Java, 
+          and fell in love with how fun it can be to wrestle over difficult problems with a team. Since then,
+          I've pursued internships and personal projects in mainly web and mobile development.
+        </h2>
           <br/>
-          <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-            culpa qui officia deserunt mollit anim id est laborum.</h2>
+          <h2>Outside of coding, I'm passionate about epidemiology and virology. The spread of disease and how to prevent it has 
+            interested me since I was a little kid. Throughout the pandemic I worked in a medical laboratory which gave me 
+            exposure to what finding illnesses on the cellular level looks like. Helping patients' lives gave me a strong sense of
+            fulfillment and I would love to create software that enhances people's lives as well - in or outside of the medical field.
+            </h2>
       </div>
       <a href="#experience-section"><img className="down-arrow" src={chevron} alt="down"/></a>
       <h1 className="title">EXPERIENCE</h1>
