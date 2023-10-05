@@ -243,6 +243,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .experience-description p {
   padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.113);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 .experience-title {
   display: flex;
