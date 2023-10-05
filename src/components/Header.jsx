@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import pageEmoji from "../images/pageEmoji.png"
+import atomic from "../images/atomic.png"
 
 export default function Header(props) {
   const { setPage, page } = props
@@ -22,7 +22,9 @@ export default function Header(props) {
 
   return <header className="App-header">
       <ul id={headerID}>
-        <li className={page === 0 ? "selected-heading" : ""} id="title" onClick={() => {setPage(0)}}><img src={pageEmoji} alt="page emoji"/></li>
+        <li className={page === 0 ? "selected-heading" : ""} id="title" onClick={() => {setPage(0)}}>
+          <img src={atomic} alt="page emoji"/>
+        </li>
         <li className={page === 0 ? "selected-heading" : ""} onClick={() => {setPage(1)}}>About</li>
         <li className={page === 0 ? "selected-heading" : ""} onClick={() => {setPage(2)}}>Portfolio</li>
         <li className={page === 0 ? "selected-heading" : ""} onClick={() => {setPage(3)}}>Contact</li>

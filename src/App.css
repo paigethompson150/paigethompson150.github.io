@@ -3,8 +3,8 @@
   width: 100vw;
   height: 100vh;
   background: black;
-  /* background: linear-gradient(45deg, #010639, #001a27, #0a2a2b, #000000);
-	background-size: 400% 400%; */
+  background: linear-gradient(180deg, #010639, #001a27, #0a2a2b, #000000);
+	background-size: 500% 500%;
 	animation: gradient 15s ease infinite;
   color: white;
   animation: gradient 20s ease infinite;
