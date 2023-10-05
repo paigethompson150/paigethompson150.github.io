@@ -157,21 +157,9 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: -165px;
   margin-left: 50px;
   color: black;
-  display: block;
-}
-.home-intro-gif img{
-  width: 100vw;
 }
 
   @media(min-width: 500px) {
-    .home-intro {
-      display: flex;
-    }
-    .home-intro-gif img {
-      margin-top: -65px;
-      margin-left: 10px;
-      position: absolute;
-    }
   .dot:first-child {
     height: 190px;
     width: 190px;
