@@ -9,7 +9,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
   const [page, setPage] = useState(0);
-  const pages = [<Home/>, <About/>, <Portfolio/>, <Contact/>, <Travels/>]
+  const pages = [<Home onClick={() => setPage(1)}/>, <About/>, <Portfolio/>, <Contact/>, <Travels/>]
 
   return (
     <div className="App">
