@@ -26,8 +26,8 @@ export default function Portfolio() {
   ]
   const [selectedProjectType, setSelectedProjectType] = useState("All");
   const [selectedProject, setSelectedProject] = useState(-1);
-  const leftProjectsList = leftProjects.map((project, index) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hidden"} obj={project} onClick={() => setSelectedProject(project)}/>);
-  const rightProjectsList = rightProjects.map((project, index) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hidden"} obj={project} onClick={() => setSelectedProject(project)}/>);
+  const leftProjectsList = leftProjects.map((project) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hidden"} obj={project} onClick={() => setSelectedProject(project)}/>);
+  const rightProjectsList = rightProjects.map((project) => <Project className={selectedProjectType === project.type || selectedProjectType === "All" ? "shown" : "hidden"} obj={project} onClick={() => setSelectedProject(project)}/>);
   
   const tech = selectedProject.tech?.map((tech) => <span className="tech-item">{tech}</span>);
 

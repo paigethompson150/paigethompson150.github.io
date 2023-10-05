@@ -72,6 +72,7 @@ p, h1, h2, h3, h4, h5, h6 {
   position: sticky; 
   top: 0;
   padding-bottom: 5px;
+  z-index: 9;
 }
 
 .App-header ul {
@@ -207,8 +208,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 700px) {
   .Home, .About, .Portfolio, .Contact {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .Home {
     padding-left: 1vw;
@@ -224,41 +225,47 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.experience-container {
+.experience-section {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 200px;
+  gap: 30px;
+  padding-bottom: 60px;
 }
-
-.Experience-Button button {
-  border: none;
-  text-decoration: none;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  padding: 20px;
-  padding-right: 250px;
-  max-width: 250px;
+.experience-date {
   white-space: nowrap;
-  border-radius: 15px;
-  color: white;
+  color: rgba(255, 255, 255, 0.661);
 }
 .experience-description {
-  padding: 20px;
-  border-radius: 15px;
-  width: 40vw;
-  background-color: rgb(255, 255, 255, 0.06);
+  display: block;
+  min-width: 40vw;
+  max-width: 600px;
+}
+.experience-description p {
+  padding-bottom: 10px;
+}
+.experience-title {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 15px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 800px){
+  .experience-section {
+    display: block;
+  }
+}
+.resume {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+.resume:hover {
+  transition: 0.5s ease-in-out;
+  font-size: 1.3em;
 }
 
-.date {
-  margin-bottom: 10px;
-}
-.unselected {
-  background-color: rgba(0, 0, 0, 0.8);
-} 
-.selected {
-  background-color: rgb(255, 255, 255, 0.06);
-}
+
 .down-arrow {
   width: 40px;
   position: relative;
