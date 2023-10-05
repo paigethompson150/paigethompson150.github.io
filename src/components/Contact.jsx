@@ -46,8 +46,8 @@ const Contact = () => {
           <input className="contact-input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
           <input className="contact-input" type="email" placeholder="Email address" value={email} onChange={e => setEmail(e.target.value)} />
           <textarea rows="8" className="contact-input" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-          <div className="Experience-Button">
-            <button className="Experience-Button" onClick={submit}>Send Message</button>
+          <div>
+            <button onClick={submit}>Send Message</button>
           </div>
           <span className={emailSent ? 'visible' : 'hidden'}>Thank you for your message! Here's some cake: 🎂</span>
         </div>

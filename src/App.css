@@ -323,7 +323,6 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-left: 10px;
 }
 .project img:hover {
-  transition: 05s linear;
   mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.263) 0%,rgb(0, 0, 0) 100%);
   -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.263) 0%,rgb(0, 0, 0) 100%);
 }
@@ -443,8 +442,12 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 1.3em;
 }
 
-.Contact .Experience-Button button {
+.Contact button {
   color: black;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
   border-radius: 8px;
   font-size: 1.3em;
   font-weight:600;
