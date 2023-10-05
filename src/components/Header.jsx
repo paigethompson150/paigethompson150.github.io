@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import Home from "./Home"
 import pageEmoji from "../images/pageEmoji.png"
 
 export default function Header(props) {
