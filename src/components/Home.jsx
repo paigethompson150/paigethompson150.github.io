@@ -1,4 +1,5 @@
 import 'animate.css';
+import paigewalking from '../images/paigewalking.gif';
 
 export default function Home(props) {
   return <div className="Home">
@@ -9,9 +10,14 @@ export default function Home(props) {
     </div>
 
       <div className="home-intro">
-        <h4>Hey, my name is</h4>
-        <h1>Paige Thompson</h1>
-        <h4>Learn a little bit more <a onClick={props.onClick}><u>about me</u></a></h4>
+        <div>
+          <h4>Hey, my name is</h4>
+          <h1>Paige Thompson</h1>
+          <h4>Learn a little bit more <a onClick={props.onClick}><u>about me</u></a></h4>
+        </div>
+        <div className="home-intro-gif">
+          <img src={paigewalking} alt="little animated paige walking and saying `Thanks for visiting!`" />
+        </div>
       </div>
   </div>
 }
