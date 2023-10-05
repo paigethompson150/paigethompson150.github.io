@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import atomic from "../images/atomic.png"
 
 export default function Header(props) {
-  const { setPage, page } = props
+  const { page, setPage } = props
   const [headerID, setHeaderID] = useState("")
 
   const listenScrollEvent = (event) => {
@@ -23,12 +23,12 @@ export default function Header(props) {
   return <header className="App-header">
       <ul id={headerID}>
         <li className={page === 0 ? "selected-heading" : ""} id="title" onClick={() => {setPage(0)}}>
-          <img src={atomic} alt="page emoji"/>
+          <img src={atomic} alt="atomic structure"/>
         </li>
-        <li className={page === 0 ? "selected-heading" : ""} onClick={() => {setPage(1)}}>About</li>
-        <li className={page === 0 ? "selected-heading" : ""} onClick={() => {setPage(2)}}>Portfolio</li>
-        <li className={page === 0 ? "selected-heading" : ""} onClick={() => {setPage(3)}}>Contact</li>
-        <li className={page === 0 ? "selected-heading" : ""} onClick={() => {setPage(4)}}>Travels</li>
+        <li className={page === 1 ? "selected-heading" : ""} onClick={() => {setPage(1)}}>About</li>
+        <li className={page === 2 ? "selected-heading" : ""} onClick={() => {setPage(2)}}>Portfolio</li>
+        <li className={page === 3 ? "selected-heading" : ""} onClick={() => {setPage(3)}}>Contact</li>
+        <li className={page === 4 ? "selected-heading" : ""} onClick={() => {setPage(4)}}>Travels</li>
       </ul>
   </header>
 }
