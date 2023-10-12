@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.8522fc2b.css",
-    "main.js": "/portfolio-page/static/js/main.d574efd4.js",
+    "main.css": "/portfolio-page/static/css/main.c706c55d.css",
+    "main.js": "/portfolio-page/static/js/main.05d801a4.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio-page/static/js/787.1ed0c42c.chunk.js",
     "static/media/avatar.png": "/portfolio-page/static/media/avatar.6ad4e71972c561d6764b.png",
     "static/media/cos.png": "/portfolio-page/static/media/cos.21a33a52937d58a31cc4.png",
@@ -9,7 +9,6 @@
     "static/media/ramen.png": "/portfolio-page/static/media/ramen.e2dbaaf738fe2c23addf.png",
     "static/media/tictactoe.gif": "/portfolio-page/static/media/tictactoe.8474f5e64c6a4c5b9c70.gif",
     "static/media/dashboard.png": "/portfolio-page/static/media/dashboard.8421c55515738e9b5958.png",
-    "static/media/portfolio.png": "/portfolio-page/static/media/portfolio.4da09ac07c3f94d916d7.png",
     "static/media/toronto.jpeg": "/portfolio-page/static/media/toronto.33b37743b29ef1f06140.jpeg",
     "static/media/westminster.jpeg": "/portfolio-page/static/media/westminster.d240d3edd3a80efb0ad5.jpeg",
     "static/media/iceland.jpeg": "/portfolio-page/static/media/iceland.161c3190a1c283f61dd2.jpeg",
@@ -19,18 +18,19 @@
     "static/media/tampa.jpeg": "/portfolio-page/static/media/tampa.89177cd8137c25dcaed0.jpeg",
     "static/media/northcarolina.jpeg": "/portfolio-page/static/media/northcarolina.78576ced4d73de7f12cc.jpeg",
     "static/media/londoneye.jpeg": "/portfolio-page/static/media/londoneye.130f8488c573fb8ab7e7.jpeg",
+    "static/media/portfolio.png": "/portfolio-page/static/media/portfolio.7485a2c5dbe1209a2d52.png",
     "static/media/gamenight.png": "/portfolio-page/static/media/gamenight.01c61443fa6ae62e1635.png",
     "static/media/paigewalking.gif": "/portfolio-page/static/media/paigewalking.04b17dcff28d98454bd0.gif",
     "static/media/atomic.png": "/portfolio-page/static/media/atomic.5fca662a4cfb337ad0b2.png",
     "static/media/linkedin.png": "/portfolio-page/static/media/linkedin.9eaa96f73a0b53a2eace.png",
     "static/media/tweet.jpeg": "/portfolio-page/static/media/tweet.bd6a090441302ee4399c.jpeg",
     "index.html": "/portfolio-page/index.html",
-    "main.8522fc2b.css.map": "/portfolio-page/static/css/main.8522fc2b.css.map",
-    "main.d574efd4.js.map": "/portfolio-page/static/js/main.d574efd4.js.map",
+    "main.c706c55d.css.map": "/portfolio-page/static/css/main.c706c55d.css.map",
+    "main.05d801a4.js.map": "/portfolio-page/static/js/main.05d801a4.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio-page/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8522fc2b.css",
-    "static/js/main.d574efd4.js"
+    "static/css/main.c706c55d.css",
+    "static/js/main.05d801a4.js"
   ]
 }
