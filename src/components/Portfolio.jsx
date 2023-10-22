@@ -13,16 +13,16 @@ import arrowBack from '../images/arrowBack.png';
 
 export default function Portfolio() {
   let leftProjects = [
-    {key: 2, type: "iOS", name:"GameNight", image:gamenight, desc: "Social networking app for boardgame enthusiasts. This was the final project for my CodePath course, intermediate iOS development. I worked on this app with two team members and we were one of the 12 out of 80+ teams to present during CodePath's National Demo Day! I was responsible for UX/UI Design, database organization, implementation of player profiles and persistence of data.", tech: ['Swift','Figma', 'Parse', 'BoardGameAPI'], link: 'https://github.com/paigethompson150/GameNight'},
-    {key: 0, type: "Web", name:"Pagu Ramen", image:ramen, desc: "Landing page for a sample ramen restaurant, `Pagu Ramen`. All pages are fully rendered in the DOM using ES6 modules & bundled using webpack.", tech: ['JavaScript', 'Webpack', 'HTML/CSS'], link: 'https://paigethompson150.github.io/webpack_practice/'},
-    {key: 7, type: "Web", name:"Tic-Tac-Toe", image:ticTacToe, desc: "A simple website where you play tic-tac-toe against `Demagotron`: the computer who makes randomized decisions.", tech: ['JavaScript', 'HTML/CSS'], link: 'https://paigethompson150.github.io/browser-tic-tac-toe/'},
-    {key: 5, type: "Design", name:"Admin Dashboard", image:dashboard, desc: "Sample dashboard design", tech: ['HTML/CSS'], link: 'https://paigethompson150.github.io/admin-dashboard/'},
+    {key: 2, type: "iOS", name:"GameNight", image:gamenight, desc: "A social networking app for boardgame enthusiasts. This was the final project for the CodePath course: intermediate iOS development. I worked on this app with two team members and we were one of the 12 out of 80+ teams to present during CodePath's National Demo Day! I was responsible for UX/UI Design, database organization, implementation of player profiles and persistence of data.", tech: ['Swift','Figma', 'Parse', 'BoardGameAPI'], link: 'https://github.com/paigethompson150/GameNight'},
+    {key: 0, type: "Web", name:"Pagu Ramen", image:ramen, desc: "A landing page for a sample ramen restaurant, `Pagu Ramen`. All pages are fully rendered in the DOM using ES6 modules & bundled using webpack.", tech: ['JavaScript', 'Webpack', 'HTML/CSS'], link: 'https://paigethompson150.github.io/webpack_practice/'},
+    {key: 7, type: "Web", name:"Tic-Tac-Toe", image:ticTacToe, desc: "An interactive website where you play tic-tac-toe against `Demagotron`: the computer who makes randomized decisions.", tech: ['JavaScript', 'HTML/CSS'], link: 'https://paigethompson150.github.io/browser-tic-tac-toe/'},
+    {key: 5, type: "Design", name:"Admin Dashboard", image:dashboard, desc: "A fun dashboard design, created while going through The Odin Project fundamentals.", tech: ['HTML/CSS'], link: 'https://paigethompson150.github.io/admin-dashboard/'},
   ]
   let rightProjects = [
-    {key: 4, type: "iOS", name:"Tweeter", image:tweet, desc: "A basic `Twitter`(or now X) app to view, compose, favorite, and retweet tweets.", tech: ['Swift', 'Twitter API'], link: 'https://github.com/paigethompson150/tweeter'},
+    {key: 4, type: "iOS", name:"Tweeter", image:tweet, desc: "A `Twitter`(or now X) app to view, compose, favorite, and retweet tweets.", tech: ['Swift', 'UIKit','Twitter API'], link: 'https://github.com/paigethompson150/tweeter'},
     {key: 1, type: "Web", name:"Curse of Strahd", image:cos, desc: "Website created for documenting the journeys of my Dungeons & Dragons group.", tech: ['HTML/CSS', 'JavaScript'], link: 'https://paigethompson150.github.io/CurseOfStrahd/'},
     {key: 3, type: "Web", name:"Portfolio", image:portfolio, desc: "This very website here!", tech: ['HTML/CSS', 'React.JS']},
-    {key: 6, type: "Design", name:"Call to Action Form", image:signUp, desc: "A simple design for a call to action form.", tech: ['HTML/CSS'], link: 'https://paigethompson150.github.io/sign-up-form/'}
+    {key: 6, type: "Design", name:"Call to Action Form", image:signUp, desc: "Front-end design for a call to action form.", tech: ['HTML/CSS'], link: 'https://paigethompson150.github.io/sign-up-form/'}
   ]
   const [selectedProjectType, setSelectedProjectType] = useState("All");
   const [selectedProject, setSelectedProject] = useState(-1);
@@ -66,7 +66,7 @@ export default function Portfolio() {
       {/* Project Popup */}
       <div className={selectedProject !== -1 ? "project-expanded" : "project-hidden"} ref={newRef}>
         <button onClick={() => setSelectedProject(-1)}>
-          <img src={arrowBack} alt="back arrow" />
+          <img className="back-arrow" src={arrowBack} alt="back arrow" />
         </button>
 
         <div className="project-wrapper">

@@ -3,7 +3,7 @@
 :root {
   width: 100%;
   height: 100%;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #580a4d, #720a32, #096e93, #033451);
 	background-size: 400% 400%;
 	height: 100vh;
   color: white;
@@ -295,6 +295,9 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-bottom: 5px;
   border-radius: 10px;
 }
+.project-options li:hover {
+  cursor: pointer;
+}
 .unselected {
   background-color: black;
 }
@@ -305,6 +308,9 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   gap: 20px;
   padding-top: 40px;
+}
+.projects-container { 
+  cursor: pointer;
 }
 .projects-left, .projects-right {
   width: 50vw;
@@ -432,6 +438,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .project-expanded button img {
   height: 20px;
+}
+.back-arrow:hover {
+  cursor: pointer;
 }
 
 
