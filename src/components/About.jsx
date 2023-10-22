@@ -19,7 +19,7 @@ export default function About() {
     },
     {
       key:2, company:"Boynton Insurance", date:"Jul. 2022 - Dec. 2022",
-      title: "SEO/Digital Marketing Associate",
+      title: "SEO Associate",
       role1: "Updated SEO strategy and restructured website to increase page visits by 60%.",
       role2: "Designed and deployed clients intake forms, web pages, and email campaigns."
     },
