@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://paigethompson150.github.io/portfolio-page",
+  "homepage": "https://paigethompson150.github.io",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

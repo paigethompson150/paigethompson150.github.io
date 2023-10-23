@@ -476,12 +476,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .contact-links {
   text-align: left;
+  padding-left: 20px;
 }
-.contact-imgs{
-  display: flex;
-  gap: 10px;
+.contact-links h3 {
+  padding-bottom: 10px;
 }
-.contact-imgs img{
+.contact-links img{
   border-radius: 8px;
   margin-top: 10px;
   width: 40px;
@@ -492,4 +492,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .Contact {
     display: inline-block;
   }
+  .contact-links {
+    padding-left: 0px;
+  } 
 }

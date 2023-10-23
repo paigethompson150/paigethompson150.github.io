@@ -1,11 +1,26 @@
 import 'animate.css';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 
 const Contact = () => {
+  /* Importing Script for Linkedin badge */
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src = "https://platform.linkedin.com/badges/js/profile.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
+  /* Setting up React Email */
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -54,14 +69,13 @@ const Contact = () => {
 
         <div className="contact-links">
             <h3>paigethompson150@gmail.com</h3>
-            <div className="contact-imgs">
-              <a target="_blank" href="https://www.linkedin.com/in/paige-thompson-3973251a1/" rel="noreferrer">
-                <img src={linkedin} alt="linkedin" />
-              </a>
-              <a target="_blank" href="https://github.com/paigethompson150" rel="noreferrer">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="paige-thompson-3973251a1" data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/paige-thompson-3973251a1?trk=profile-badge">
+                </a>
+              </div>
+            <a target="_blank" href="https://github.com/paigethompson150" rel="noreferrer">
                 <img src={github} alt="github" />
-              </a>
-            </div>
+            </a>
           </div>
       </div>
     );

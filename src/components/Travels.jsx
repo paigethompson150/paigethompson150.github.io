@@ -1,12 +1,13 @@
 import 'animate.css';
 import React, { useState, useRef, useEffect } from 'react';
-import glasgow from '../images/glasgow.jpeg'
+import glasgow from '../images/glasgow.jpeg';
 
 import Travel from './Travel';
 
 export default function Travels() {
   var data = require('./data/travels.json');
-  const TravelsList = data.map((travel) => <Travel obj={travel}/> )
+  const TravelsList = data.map((travel) => <Travel obj={travel}/>)
+  const TravelsImages = [glasgow, glasgow, glasgow, glasgow];
 
   for (var i = 0; i < data.length; i++)
   {
