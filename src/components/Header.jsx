@@ -28,7 +28,7 @@ export default function Header(props) {
         <li className={page === 1 ? "selected-heading" : ""} onClick={() => {setPage(1)}}>About</li>
         <li className={page === 2 ? "selected-heading" : ""} onClick={() => {setPage(2)}}>Portfolio</li>
         <li className={page === 3 ? "selected-heading" : ""} onClick={() => {setPage(3)}}>Contact</li>
-        <li className={page === 4 ? "selected-heading" : ""} onClick={() => {setPage(4)}}>Travels</li>
+        {/*<li className={page === 4 ? "selected-heading" : ""} onClick={() => {setPage(4)}}>Travels</li>*/}
       </ul>
   </header>
 }
