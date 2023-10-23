@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.50aeced9.css",
-    "main.js": "/portfolio-page/static/js/main.7bc20d4d.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio-page/static/js/787.1ed0c42c.chunk.js",
-    "static/media/avatar.png": "/portfolio-page/static/media/avatar.6ad4e71972c561d6764b.png",
-    "static/media/cos.png": "/portfolio-page/static/media/cos.21a33a52937d58a31cc4.png",
-    "static/media/SignUp.png": "/portfolio-page/static/media/SignUp.b0970afafeb3f39ffde1.png",
-    "static/media/ramen.png": "/portfolio-page/static/media/ramen.e2dbaaf738fe2c23addf.png",
-    "static/media/tictactoe.gif": "/portfolio-page/static/media/tictactoe.8474f5e64c6a4c5b9c70.gif",
-    "static/media/dashboard.png": "/portfolio-page/static/media/dashboard.8421c55515738e9b5958.png",
-    "static/media/glasgow.jpeg": "/portfolio-page/static/media/glasgow.d13610a2b7467ea48254.jpeg",
-    "static/media/portfolio.png": "/portfolio-page/static/media/portfolio.7485a2c5dbe1209a2d52.png",
-    "static/media/gamenight.png": "/portfolio-page/static/media/gamenight.01c61443fa6ae62e1635.png",
-    "static/media/paigewalking.gif": "/portfolio-page/static/media/paigewalking.04b17dcff28d98454bd0.gif",
-    "static/media/atomic.png": "/portfolio-page/static/media/atomic.5fca662a4cfb337ad0b2.png",
-    "static/media/linkedin.png": "/portfolio-page/static/media/linkedin.9eaa96f73a0b53a2eace.png",
-    "static/media/tweet.jpeg": "/portfolio-page/static/media/tweet.bd6a090441302ee4399c.jpeg",
-    "index.html": "/portfolio-page/index.html",
-    "main.50aeced9.css.map": "/portfolio-page/static/css/main.50aeced9.css.map",
-    "main.7bc20d4d.js.map": "/portfolio-page/static/js/main.7bc20d4d.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio-page/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/static/css/main.50aeced9.css",
+    "main.js": "/static/js/main.c4d0681a.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/avatar.png": "/static/media/avatar.6ad4e71972c561d6764b.png",
+    "static/media/cos.png": "/static/media/cos.21a33a52937d58a31cc4.png",
+    "static/media/SignUp.png": "/static/media/SignUp.b0970afafeb3f39ffde1.png",
+    "static/media/ramen.png": "/static/media/ramen.e2dbaaf738fe2c23addf.png",
+    "static/media/tictactoe.gif": "/static/media/tictactoe.8474f5e64c6a4c5b9c70.gif",
+    "static/media/dashboard.png": "/static/media/dashboard.8421c55515738e9b5958.png",
+    "static/media/glasgow.jpeg": "/static/media/glasgow.d13610a2b7467ea48254.jpeg",
+    "static/media/portfolio.png": "/static/media/portfolio.7485a2c5dbe1209a2d52.png",
+    "static/media/gamenight.png": "/static/media/gamenight.01c61443fa6ae62e1635.png",
+    "static/media/paigewalking.gif": "/static/media/paigewalking.04b17dcff28d98454bd0.gif",
+    "static/media/atomic.png": "/static/media/atomic.5fca662a4cfb337ad0b2.png",
+    "static/media/linkedin.png": "/static/media/linkedin.9eaa96f73a0b53a2eace.png",
+    "static/media/tweet.jpeg": "/static/media/tweet.bd6a090441302ee4399c.jpeg",
+    "index.html": "/index.html",
+    "main.50aeced9.css.map": "/static/css/main.50aeced9.css.map",
+    "main.c4d0681a.js.map": "/static/js/main.c4d0681a.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50aeced9.css",
-    "static/js/main.7bc20d4d.js"
+    "static/js/main.c4d0681a.js"
   ]
 }
