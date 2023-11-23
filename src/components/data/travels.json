@@ -4,28 +4,47 @@
     "title":"United Kingdom",
     "date":"date",
     "description":"Description"
-  }, {
+  },
+  {
     "key": 1,
+    "title": "New York",
+    "date": "date",
+    "description": "Description"
+  }, {
+    "key": 2,
     "title":"Tampa, Florida",
     "date":"date",
     "description":"Description"
   }, {
-    "key": 2,
-    "title":"QC Winter Festival",
-    "date":"date",
-    "description":"Description"
-  }, {
     "key": 3,
-    "title":"Montreal",
+    "title":"Toronto, CA",
     "date":"date",
     "description":"Description"
   }, {
     "key": 4,
+    "title":"QC Winter Festival",
+    "date":"date",
+    "description":"Description"
+  },
+   {
+    "key": 5,
+    "title":"North Carolina",
+    "date":"date",
+    "description":"Description"
+  }, 
+  {
+    "key": 6,
+    "title":"Montreal",
+    "date":"date",
+    "description":"Description"
+  },
+  {
+    "key": 7,
     "title":"Iceland",
     "date":"date",
     "description":"Description"
   }, {
-    "key": 5,
+    "key": 8,
     "title":"California",
     "date":"date",
     "description":"Description"
