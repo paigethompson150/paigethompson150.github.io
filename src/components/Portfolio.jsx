@@ -65,11 +65,11 @@ export default function Portfolio() {
 
       {/* Project Popup */}
       <div className={selectedProject !== -1 ? "project-expanded" : "project-hidden"} ref={newRef}>
-        <button onClick={() => setSelectedProject(-1)}>
-          <img className="back-arrow" src={arrowBack} alt="back arrow" />
-        </button>
-
-        <div className="project-wrapper">
+          <div className="project-header">
+            <button onClick={() => setSelectedProject(-1)}>
+              <img className="back-arrow" src={arrowBack} alt="back arrow" />
+            </button>
+          </div>
           <h2 className="project-title">{selectedProject.name}</h2>
           <img src={selectedProject.image} alt="project"/>
       
@@ -84,7 +84,6 @@ export default function Portfolio() {
           <h3>Website</h3>
           <a target="_blank" href={selectedProject.link} rel="noreferrer">{selectedProject.link}</a>
         </div>
-      </div>
       <div className={selectedProject !== -1 ? "overlay" : ""}></div>
   </div>
 }

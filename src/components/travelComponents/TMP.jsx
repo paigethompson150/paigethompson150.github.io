@@ -1,10 +1,8 @@
-import glasgow from '../../images/glasgow.jpeg';
 
 export default function TMP() {
-  return <div>
-        <div>
-          <h3>Tampa</h3>
-          <img src={glasgow} alt=""/>
-        </div>
-  </div>
+  return <div className="trip">
+          <h1>Tampa</h1>
+          <h3>May 6 - May 10</h3>
+          
+    </div>
 }

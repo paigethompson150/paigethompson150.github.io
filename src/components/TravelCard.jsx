@@ -1,14 +1,15 @@
-import glasgow from '../images/glasgow.jpeg';
-import ny from '../images/newyork.jpeg';
+import uk from '../images/uk/londoneye.jpeg';
+import qc from '../images/qc/quebec.png';
 import tampa from '../images/tampa.jpeg';
 import toronto from '../images/toronto.jpeg';
 import northcarolina from '../images/northcarolina.jpeg';
 import iceland from '../images/iceland.jpeg';
 import california from '../images/cali.jpeg';
+import ny from '../images/ny/drive.gif';
 
 export default function TravelCard(props) {
   const {key, title, date, desc} = props.obj;
-  const TravelsImages = [glasgow, ny, tampa, toronto, /*replace with quebec */northcarolina, northcarolina, /*replace w/ montreal*/northcarolina, iceland, california];
+  const TravelsImages = [uk, ny, tampa, toronto, qc, northcarolina, /*replace w/ montreal*/northcarolina, iceland, california];
   const image = TravelsImages[key]
 
   return <div className={[props.className, "project", "travel-card"].join(' ')} onClick={props.onClick}>

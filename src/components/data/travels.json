@@ -12,17 +12,17 @@
     "description": "Description"
   }, {
     "key": 2,
-    "title":"Tampa, Florida",
+    "title":"Tampa",
     "date":"date",
     "description":"Description"
   }, {
     "key": 3,
-    "title":"Toronto, CA",
+    "title":"Toronto",
     "date":"date",
     "description":"Description"
   }, {
     "key": 4,
-    "title":"QC Winter Festival",
+    "title":"Québec City",
     "date":"date",
     "description":"Description"
   },
@@ -34,7 +34,7 @@
   }, 
   {
     "key": 6,
-    "title":"Montreal",
+    "title":"Montréal",
     "date":"date",
     "description":"Description"
   },

@@ -47,13 +47,12 @@ export default function Travels() {
 
           {/* Travel Popup */}
           <div className={selectedTravel !== -1 ? "travel-expanded" : "project-hidden"} ref={newRef}>
-            <button onClick={() => setSelectedTravel(-1)}>
-              <h2>x</h2>
-            </button>
-
-            <div className="travel-wrapper">
-              <SelectedComponent/>
+            <div className="project-header">
+              <button className="travel-btn" onClick={() => setSelectedTravel(-1)}>
+                <h2>x</h2>
+              </button>
             </div>
+              <SelectedComponent/>
           </div>
         <div className={selectedTravel !== -1 ? "overlay" : ""}></div>
     </div>

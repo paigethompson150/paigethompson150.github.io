@@ -8,8 +8,7 @@ import pepsi from '../../images/ny/pepsi.jpeg';
 import drive from '../../images/ny/drive.gif';
 
 export default function NY() {
-  return <div>
-        <div className="trip">
+  return <div className="trip">
           <h1>New York, New York</h1>
           <h3>Jul. 24 - 27</h3>
           <img src={amtrak} alt="view of nyc in the distance"/>
@@ -45,6 +44,8 @@ export default function NY() {
           <img src={waternyc} alt="paige in front of river" />
           <img src={pepsi} alt="pepsicola sign" />
           <img src={drive} alt="view of nyc while driving" />
-        </div>
+          <p>
+            Everyone I met was so welcoming, friendly and fun to talk to. These few days were a highlight of the year for me :)
+          </p>
   </div>
 }
