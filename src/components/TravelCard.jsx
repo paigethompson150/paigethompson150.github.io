@@ -11,7 +11,7 @@ export default function TravelCard(props) {
   const TravelsImages = [glasgow, ny, tampa, toronto, /*replace with quebec */northcarolina, northcarolina, /*replace w/ montreal*/northcarolina, iceland, california];
   const image = TravelsImages[key]
 
-  return <div className={[props.className, "project"].join(' ')} onClick={props.onClick}>
+  return <div className={[props.className, "project", "travel-card"].join(' ')} onClick={props.onClick}>
         <img src={image} alt=""/>
         <div className="project-intro">
           <h3>

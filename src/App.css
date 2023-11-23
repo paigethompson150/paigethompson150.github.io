@@ -340,6 +340,14 @@ p, h1, h2, h3, h4, h5, h6 {
   mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.263) 0%,rgb(0, 0, 0) 100%);
   -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.263) 0%,rgb(0, 0, 0) 100%);
 }
+.project-intro h3{
+  font-size: 32px;
+  margin-top: -20px;
+}
+.travel-card .project-intro h3{
+  font-size: 60px;
+  margin-top: -50px;
+}
 .project:hover .project-intro {
   display: block;
   float: left;
