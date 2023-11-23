@@ -6,8 +6,8 @@ import Travel from './Travel';
 
 export default function Travels() {
   var data = require('./data/travels.json');
-  const TravelsList = data.map((travel) => <Travel obj={travel}/>)
   const TravelsImages = [glasgow, glasgow, glasgow, glasgow];
+  const TravelsList = data.map((travel) => <Travel obj={travel}/>)
 
   for (var i = 0; i < data.length; i++)
   {
