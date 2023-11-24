@@ -4,7 +4,6 @@ import TravelCard from './TravelCard';
 import UK from './travelComponents/UK';
 import NY from './travelComponents/NY';
 import TMP from './travelComponents/TMP';
-import TNT from './travelComponents/TNT';
 import QC from './travelComponents/QC';
 import NC from './travelComponents/NC';
 import MTL from './travelComponents/MTL';
@@ -17,7 +16,7 @@ export default function Travels() {
   const [selectedTravel, setSelectedTravel] = useState(-1);
   var data = require('./data/travels.json');
   const travelCardList = data.map((travel) => <TravelCard obj={travel} onClick={() => setSelectedTravel(travel)}/>)
-  const TravelComponents = [UK,NY,TMP,TNT,QC,NC,MTL,ICE,CALI];
+  const TravelComponents = [UK,NY,TMP,QC,NC,MTL,ICE,CALI];
   const SelectedComponent = TravelComponents[(selectedTravel === -1 ? 1 : selectedTravel.key)]
 
   const newRef = useRef(null);

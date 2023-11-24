@@ -1,10 +1,7 @@
-import glasgow from '../../images/glasgow.jpeg';
 
 export default function QC() {
   return <div>
-        <div>
-          <h3>quebec winter</h3>
-          <img src={glasgow} alt=""/>
-        </div>
+          <h1>Quebec Winter Carnival</h1>
+          <h3>Feb 2 - Feb 5</h3>
   </div>
 }

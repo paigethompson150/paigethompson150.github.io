@@ -63,7 +63,7 @@ export default function UK() {
           <br/>
           <h3>Hamilton</h3>
           <img src={englishbrek} alt="english breakfast" />
-          <p>Started the day off with a proper english breakfast at a cafe near the hostel. That would actually be my last night at the hostel, I had been assigned a room with all men and on the second night of my roommates was unfortunately making me feel unsafe. So I booked a private room at a nearby hotel and this immediately solved all my worries.</p>
+          <p>Started the day off with a proper english breakfast at a cafe near the hostel. Baked beans for breakfast is a pretty crazy idea. I'm still not sure how I feel about it. Last night would actually be my last night at the hostel, I was the only woman in my room and one of my roommates was just being way too much - so I booked a private room at a nearby hotel and I felt 1000% safer. The fact that I'm traveling alone in a foreign country, even in a city as safe as London, was becoming a reality for me and I had to always trust my spidey senses.</p>
           <p>I walked around Borough Market and really enjoyed seeing the American Candy shops that were everywhere. From the market I bought fresh fish & chips and strawberries, which were both good! The strawberries were juicy and fresh, they had a slightly different taste and were smaller than the strawberries in the US, and I found the English ones to be noticably better.</p>
           <img src={borough} alt="american candy store" />
           <p>
@@ -100,6 +100,8 @@ export default function UK() {
           <p>I met an Australian girl who was also traveling by herself, and as you can tell by our glasses neither of us are big whiskey fans!</p>
           <img src={edin3} alt="table of whiskey glasses" />
           <p>Went to a pub to try Haggis Shepherd's pie tonight, which was actually pretty good! It tasted like ground beef really. </p>
+          <p>Admittedly, at this point of the trip I was starting to become home-sick and missed sugary, processed and gluttonous American food. So I was eating Five Guys for the majority of dinners the last two-three days.</p>
+          <p>Throughout all of the walking, getting sick, and missing meals from home, I was burning a ridiculous amount of calories each day and ended up losing 5 lbs by the end of the trip. But it was worth it.</p>
 
           <br/>
           <h1>Glasgow, Scotland</h1>
