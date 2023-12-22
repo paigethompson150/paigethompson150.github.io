@@ -4,12 +4,11 @@ import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import Travels from './components/Travels';
 import React, { useState, useEffect } from 'react';
 
 function App() {
   const [page, setPage] = useState(0);
-  const pages = [<Home onClick={() => setPage(1)}/>, <About/>, <Portfolio/>, <Contact/>, <Travels/>]
+  const pages = [<Home onClick={() => setPage(1)}/>, <About/>, <Portfolio/>, <Contact/>]
 
   return (
     <div className="App">
