@@ -3,7 +3,8 @@
 :root {
   width: 100%;
   height: 100%;
-  background: black;
+  //background-image: linear-gradient(#108b9a, #2baee2, #055767);
+  background-color: black;
 	background-size: 1400% 1400%;
 	height: 100vh;
   color: white;
